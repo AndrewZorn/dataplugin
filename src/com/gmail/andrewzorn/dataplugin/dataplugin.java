@@ -87,9 +87,7 @@ public class dataplugin extends JavaPlugin {
 	public Object getMetadata(Player player, String key){
 		List<MetadataValue> values = player.getMetadata(key);  
 		for(MetadataValue value : values) {
-			if(value.getOwningPlugin().getDescription().getName().equals(this.getDescription().getName())) {
-				return value.value();
-			}
+			if(value.getOwningPlugin().getDescription().getName().equals(this.getDescription().getName()))	return value.value();
 		}
 	}
 }
