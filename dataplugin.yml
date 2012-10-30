@@ -1,0 +1,31 @@
+name: dataplugin
+author: Andrew Zorn
+main: com.gmail.andrewzorn.dataplugin.dataplugin
+version: 1.0
+
+commands:
+  getLessHungry:
+    description: Replenishes food.
+    usage: /getLessHungry
+    permission: dataplugin.*
+    permission-message: You don't have permission.
+  getFixedUp:
+    description: Replenishes health.
+    usage: /getFixedUp
+    permission: dataplugin.*
+    permission-message: You don't have permission.
+  spareChange:
+    description: Gives stuff if poor.
+    usage: /spareChange
+    permission: dataplugin.*
+    permission-message: You don't have permission.
+  getPaid:
+    description: Gives nice stuff.
+    usage: /getPaid
+    permission: dataplugin.*
+    permission-message: You don't have permission.
+
+permissions:
+  firstPlugin.*:
+    description: Permissions.
+    default: true
